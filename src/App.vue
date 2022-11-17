@@ -56,15 +56,23 @@ import pages from './components/pages.vue';
     <div class=" mt-32 flex flex-row w-maw justify-between">
       <h3 class="text-lg font-semibold uppercase mb-10">Toutes les formations  🚀</h3>
     </div>
-    <div class="relative flex flex-row justify-between w-48 items-center right-1">
-      <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
-      <pages number="2"/>
-      <pages number="3"/>
-      <pages number="4"/>
-      <pages number="..."/>
-      <pages number="8"/>
+    <div class="flex flex-row justify-between">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
-    <div class=" w-7/12 items-center h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
+    <div class="w-screen flex justify-end -ml-32">
+      <div class="mt-20 relative flex flex-row justify-between w-48 items-center">
+        <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
+        <pages number="2"/>
+        <pages number="3"/>
+        <pages number="4"/>
+        <pages number="..."/>
+        <pages number="8"/>
+      </div>
+    </div>
+    <div class="mt-20 w-7/12 items-center h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
       <h3 class="text-3xl font-bold">C’est votre dernier mot ?</h3>
       <p class="w-5/12">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
       <div class="flex flex-row w-6/12 justify-between">
@@ -73,7 +81,7 @@ import pages from './components/pages.vue';
       </div>
     </div>
   </main>
-  <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
+  <footer class="-mt-52 relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
     <div class="flex flex-row mt-28 mb-20">
       <div>
         <img class="mb-5" src="../images/Logotypes Skillsday.svg" alt="skillsday">
