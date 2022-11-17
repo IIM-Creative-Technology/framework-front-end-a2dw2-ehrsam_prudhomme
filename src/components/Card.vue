@@ -1,13 +1,13 @@
 <script setup>
 import icone_card from './icone_card.vue';
-// defineProps(['text'])
+defineProps(['text'])
 </script>
 
 <template>
   <div class=" rounded-lg w-1/5 shadow-lg">
     <slot name="img"></slot>
     <div class="p-5">
-      <p class="uppercase text-xs">Management & Leadership</p>
+      <slot name="title"><p class="uppercase text-xs">THÉMATIQUE 1</p></slot>
       <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
       <div class="flex flex-row w-9/12 justify-left pt-5">
         <slot name="icone"></slot>
