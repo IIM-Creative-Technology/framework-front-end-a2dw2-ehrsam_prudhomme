@@ -38,64 +38,186 @@ import icone_card from './components/icone_card.vue';
         <img src="../images/down.svg" alt="down">
       </div>
   </div>
-  <main class=" mb-80 mt-72 w-11/12 mx-auto flex flex-col justify-between" >
+
+  <main class="mt-72 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
     <div class="flex flex-row justify-between">
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card>
+        <template v-slot:title>
+          <p class="uppercase text-xs">Management & Leadership</p>
+        </template>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect.jpg" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:title>
+          <p class="uppercase text-xs">VENTE</p>
+        </template>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+      
+      <Card>
+        <template v-slot:title>
+          <p class="uppercase text-xs">RH, QVT & DIVERSITÉ</p>
+        </template>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+    </div>
+  </main>
+
+
+  <main class="mb-80 mt-40 w-11/12 mx-auto flex flex-col justify-between" >
+    <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
+    <div class="flex flex-row justify-between mb-16">
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect1-1.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect1-2.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect1-3.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect1-4.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
     </div>
 
-    <!-- <div class="flex flex-row justify-between">
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.jpg" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect2.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-5/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect3.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <test/> -->
+    <div class="flex flex-row justify-between mb-16">
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2-1.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2-2.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2-3.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2-4.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+    </div>
+
+    <div class="flex flex-row justify-between">
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3-1.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3-2.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3-3.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3-4.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
+        </template>
+      </Card>
+    </div>
   </main>
+
   <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
     <div class="flex flex-row mt-28 mb-20">
       <div>
