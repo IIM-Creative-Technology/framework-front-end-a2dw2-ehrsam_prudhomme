@@ -1,13 +1,13 @@
 <script setup>
-import test from './components/test.vue'
 import connect from './components/connect.vue'
 import Card from './components/Card.vue'
 import icone_card from './components/icone_card.vue';
 </script>
 
-<template class="overflow-x-hidden relative flex h-screen">
-  <header class="block relative w-screen items-center text-white">
-    <img class="top-0 absolute w-full -z-10 bg-no-repeat bg-cover" src="../images/fond.png" alt="fond">
+<template>
+  <div class="flex flex-col overflow-x-hidden items-center relative flex w-screen h-screen">
+  <header class="block relative  w-screen items-center text-white">
+    <img class="top-0 absolute w-full -z-10" src="../images/fond.png" alt="fond">
     <nav class="flex flex-row w-11/12 h-40 justify-between items-center mx-auto">
       <div class="w-1/2 flex flex-row justify-around items-center">
         <img class=" w-30 h-4" src="../images/logo.svg" alt="logo">
@@ -23,12 +23,12 @@ import icone_card from './components/icone_card.vue';
         <button class="text-purple px-4 py-3 rounded-full bg-white">Je prends contact</button>
       </div>
     </nav>
-    <div class=" mt-8 flex flex-col text-center">
+    <div class=" mt-20 flex flex-col text-center">
       <h1 class="text-6xl font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
       <p class=" w-1/2 mx-auto">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
     </div>
   </header>
-  <div class="p-5 absolute mt-20 ml-40 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
+  <div class="p-5 absolute top-2/4 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
       <div class="rounded-full py-2 px-5 w-9/12 flex flex-row bg-light_purple justify-between items-center ">
         <p>Quelle formation recherchez-vous ?</p>
         <img class=" w-8" src="../images/search.svg" alt="search">
@@ -126,24 +126,14 @@ import icone_card from './components/icone_card.vue';
         <p>Mentions légales  •  Politique de confidentialité  •  CGV</p>
       </div>
       <div class="flex flex-row justify-between w-2/12  ml-20">
-        <div class="flex w-10 h-10 bg-gris rounded-full items-center">
-          <img class="mx-auto" src="../images/instagram.svg" alt="logo">
-        </div>
-        <div class="flex w-10 h-10 bg-gris rounded-full items-center">
-          <img class="mx-auto" src="../images/linkedin.svg" alt="logo">
-        </div>
-        <div class="flex w-10 h-10 bg-gris rounded-full items-center">
-          <img class="mx-auto" src="../images/Frame.svg" alt="logo">
-        </div>
-        <div class="flex w-10 h-10 bg-gris rounded-full items-center">
-          <img class="mx-auto" src="../images/youtube.svg" alt="logo">
-        </div>
-        <!-- <div >
-          <connect href="../images/instagram.svg"/>
-        </div> -->
+        <connect/>
+        <connect/>
+        <connect/>
+        <connect/>
       </div>
     </div>
   </footer>
+  </div>
 </template>
 
 <style scoped>
