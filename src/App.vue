@@ -24,12 +24,12 @@ import pages from './components/pages.vue';
         <boutton class=" text-purple bg-white" msg="Je prends contact"/>
       </div>
     </nav>
-    <div class=" mt-20 flex flex-col text-center">
+    <div class=" mt-5 flex flex-col text-center">
       <h1 class="text-6xl font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
       <p class=" w-1/2 mx-auto">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
     </div>
   </header>
-  <div class="p-5 absolute top-2/4 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
+  <div class="mt-6 p-5 absolute top-2/4 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
       <div class="rounded-full py-2 px-5 w-9/12 flex flex-row bg-light_purple justify-between items-center ">
         <p>Quelle formation recherchez-vous ?</p>
         <img class=" w-8" src="../images/search.svg" alt="search">
@@ -40,7 +40,13 @@ import pages from './components/pages.vue';
       </div>
   </div>
   <main class="mt-72 w-11/12 mx-auto flex flex-col justify-between" >
-    <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+    <div class="flex flex-row w-maw justify-between">
+      <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+      <div class="flex flex-row items-center">
+        <img class="w-6 h-6" src="../images/arrow_l.svg" alt="arrow">
+        <img class="w-6 h-6 ml-2" src="../images/arrow_r.svg" alt="arrow">
+      </div>
+    </div>
     <div class="flex flex-row justify-between">
       <Card>
         <template v-slot:title>
@@ -93,7 +99,7 @@ import pages from './components/pages.vue';
       </Card>
     </div>
   </main>
-  <main class="mb-80 mt-40 w-11/12 mx-auto flex flex-col justify-between" >
+  <main class="-mb-5 mt-40 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
     <div class="flex flex-row justify-between mb-16">
       <Card>
@@ -215,8 +221,26 @@ import pages from './components/pages.vue';
       </Card>
     </div>
   </main>
+    <div class="w-screen flex justify-end -ml-32">
+      <div class="mt-20 relative flex flex-row justify-between w-48 items-center">
+        <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
+        <pages number="2"/>
+        <pages number="3"/>
+        <pages number="4"/>
+        <pages number="..."/>
+        <pages number="8"/>
+      </div>
+    </div>
+    <div class="mt-20 w-7/12 items-center h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
+      <h3 class="my-5 text-3xl font-bold">C’est votre dernier mot ?</h3>
+      <p class="w-5/12">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
+      <div class="my-5 flex flex-row w-6/12 justify-between">
+        <boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
+        <boutton class="font-semibold border-2 border-border_icone_card" msg="Télécharger le catalogue"/>
+      </div>
+    </div>
 
-  <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
+  <footer class="mt-20 relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
 
     <div class="flex flex-row mt-28 mb-20">
       <div>
