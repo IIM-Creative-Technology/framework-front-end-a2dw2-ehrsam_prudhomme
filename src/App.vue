@@ -1,7 +1,8 @@
 <script setup>
 import connect from './components/connect.vue'
 import Card from './components/Card.vue'
-import icone_card from './components/icone_card.vue';
+import boutton from './components/boutton.vue';
+import pages from './components/pages.vue';
 </script>
 
 <template>
@@ -19,8 +20,8 @@ import icone_card from './components/icone_card.vue';
         </div>
       </div>
       <div class="flex w-1/4 font-semibold justify-around">
-        <button class= "px-4 py-3 rounded-full bg-white/30">06 74 49 03 21</button>
-        <button class="text-purple px-4 py-3 rounded-full bg-white">Je prends contact</button>
+        <boutton class="bg-white/30" msg="06 74 49 03 21"/>
+        <boutton class=" text-purple bg-white" msg="Je prends contact"/>
       </div>
     </nav>
     <div class=" mt-20 flex flex-col text-center">
@@ -38,7 +39,6 @@ import icone_card from './components/icone_card.vue';
         <img src="../images/down.svg" alt="down">
       </div>
   </div>
-
   <main class="mt-72 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
     <div class="flex flex-row justify-between">
@@ -93,8 +93,6 @@ import icone_card from './components/icone_card.vue';
       </Card>
     </div>
   </main>
-
-
   <main class="mb-80 mt-40 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
     <div class="flex flex-row justify-between mb-16">
@@ -219,6 +217,7 @@ import icone_card from './components/icone_card.vue';
   </main>
 
   <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
+
     <div class="flex flex-row mt-28 mb-20">
       <div>
         <img class="mb-5" src="../images/Logotypes Skillsday.svg" alt="skillsday">
