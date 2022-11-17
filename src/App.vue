@@ -94,12 +94,13 @@ import icone_card from './components/icone_card.vue';
     </div>
   </main>
 
+
   <main class="mb-80 mt-40 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
     <div class="flex flex-row justify-between mb-16">
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.jpg" alt="img">
+          <img class="w-full" src="../../images/Intersect1-1.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -110,7 +111,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.png" alt="img">
+          <img class="w-full" src="../../images/Intersect1-2.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -119,7 +120,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect2.png" alt="img">
+          <img class="w-full" src="../../images/Intersect1-3.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -130,7 +131,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect3.png" alt="img">
+          <img class="w-full" src="../../images/Intersect1-4.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -141,7 +142,7 @@ import icone_card from './components/icone_card.vue';
     <div class="flex flex-row justify-between mb-16">
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.jpg" alt="img">
+          <img class="w-full" src="../../images/Intersect2-1.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -151,7 +152,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.png" alt="img">
+          <img class="w-full" src="../../images/Intersect2-2.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -160,7 +161,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect2.png" alt="img">
+          <img class="w-full" src="../../images/Intersect2-3.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -169,7 +170,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect3.png" alt="img">
+          <img class="w-full" src="../../images/Intersect2-4.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -180,7 +181,7 @@ import icone_card from './components/icone_card.vue';
     <div class="flex flex-row justify-between">
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.jpg" alt="img">
+          <img class="w-full" src="../../images/Intersect3-1.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -190,7 +191,7 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect.png" alt="img">
+          <img class="w-full" src="../../images/Intersect3-2.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
@@ -199,16 +200,16 @@ import icone_card from './components/icone_card.vue';
 
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect2.png" alt="img">
+          <img class="w-full" src="../../images/Intersect3-3.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
         </template>
       </Card>
-      
+
       <Card>
         <template v-slot:img>
-          <img class="w-full" src="../../images/Intersect3.png" alt="img">
+          <img class="w-full" src="../../images/Intersect3-4.png" alt="img">
         </template>
         <template v-slot:icone>
           <icone_card/>
