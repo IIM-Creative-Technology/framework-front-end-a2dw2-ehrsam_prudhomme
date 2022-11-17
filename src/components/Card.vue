@@ -4,8 +4,8 @@ import icone_card from './icone_card.vue';
 </script>
 
 <template>
-  <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-    <img class="" src="../../images/Intersect.jpg" alt="img">
+  <div class=" rounded-lg w-1/5 shadow-lg">
+    <slot name="img"></slot>
     <div class="p-5">
       <p class="uppercase text-xs">Management & Leadership</p>
       <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>

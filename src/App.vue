@@ -41,10 +41,26 @@ import icone_card from './components/icone_card.vue';
   <main class=" mb-80 mt-72 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
     <div class="flex flex-row justify-between">
-      <Card/>
-      <Card/>
-      <Card/>
-      <Card/>
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect.jpg" alt="img">
+        </template>
+      </Card>
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect.png" alt="img">
+        </template>
+      </Card>
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect2.png" alt="img">
+        </template>
+      </Card>
+      <Card>
+        <template v-slot:img>
+          <img class="w-full" src="../../images/Intersect3.png" alt="img">
+        </template>
+      </Card>
     </div>
 
     <!-- <div class="flex flex-row justify-between">
