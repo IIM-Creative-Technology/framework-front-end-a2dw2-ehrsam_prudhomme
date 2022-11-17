@@ -2,7 +2,8 @@
 import test from './components/test.vue'
 import connect from './components/connect.vue'
 import Card from './components/Card.vue'
-import icone_card from './components/icone_card.vue';
+import boutton from './components/boutton.vue';
+import pages from './components/pages.vue';
 </script>
 
 <template class="overflow-x-hidden relative flex h-screen">
@@ -19,8 +20,8 @@ import icone_card from './components/icone_card.vue';
         </div>
       </div>
       <div class="flex w-1/4 font-semibold justify-around">
-        <button class= "px-4 py-3 rounded-full bg-white/30">06 74 49 03 21</button>
-        <button class="text-purple px-4 py-3 rounded-full bg-white">Je prends contact</button>
+        <boutton class="bg-white/30" msg="06 74 49 03 21"/>
+        <boutton class=" text-purple bg-white" msg="Je prends contact"/>
       </div>
     </nav>
     <div class=" mt-8 flex flex-col text-center">
@@ -38,63 +39,39 @@ import icone_card from './components/icone_card.vue';
         <img src="../images/down.svg" alt="down">
       </div>
   </div>
-  <main class=" mb-80 mt-72 w-11/12 mx-auto flex flex-col justify-between" >
-    <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+  <main class="relative mb-80 mt-72 w-11/12 mx-auto flex flex-col justify-between" >
+    <div class="flex flex-row w-maw justify-between">
+      <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+      <div class="flex flex-row items-center">
+        <img class="w-6 h-6" src="../images/arrow_l.svg" alt="arrow">
+        <img class="w-6 h-6 ml-2" src="../images/arrow_r.svg" alt="arrow">
+      </div>
+    </div>
     <div class="flex flex-row justify-between">
       <Card/>
       <Card/>
       <Card/>
       <Card/>
     </div>
-
-    <!-- <div class="flex flex-row justify-between">
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.jpg" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
+    <div class=" mt-32 flex flex-row w-maw justify-between">
+      <h3 class="text-lg font-semibold uppercase mb-10">Toutes les formations  🚀</h3>
+    </div>
+    <div class="relative flex flex-row justify-between w-48 items-center right-1">
+      <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
+      <pages number="2"/>
+      <pages number="3"/>
+      <pages number="4"/>
+      <pages number="..."/>
+      <pages number="8"/>
+    </div>
+    <div class=" w-7/12 items-center h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
+      <h3 class="text-3xl font-bold">C’est votre dernier mot ?</h3>
+      <p class="w-5/12">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
+      <div class="flex flex-row w-6/12 justify-between">
+        <boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
+        <boutton class="font-semibold border-2 border-border_icone_card" msg="Télécharger le catalogue"/>
       </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect2.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-5/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect3.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <test/> -->
+    </div>
   </main>
   <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
     <div class="flex flex-row mt-28 mb-20">
