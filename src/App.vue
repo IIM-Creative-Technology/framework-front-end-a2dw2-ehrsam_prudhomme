@@ -45,72 +45,43 @@ import icone_card from './components/icone_card.vue';
         <template v-slot:img>
           <img class="w-full" src="../../images/Intersect.jpg" alt="img">
         </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
       </Card>
       <Card>
         <template v-slot:img>
           <img class="w-full" src="../../images/Intersect.png" alt="img">
+        </template>
+        <template v-slot:icone>
+          <icone_card/>
         </template>
       </Card>
       <Card>
         <template v-slot:img>
           <img class="w-full" src="../../images/Intersect2.png" alt="img">
         </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+        </template>
       </Card>
       <Card>
         <template v-slot:img>
           <img class="w-full" src="../../images/Intersect3.png" alt="img">
         </template>
+        <template v-slot:icone>
+          <icone_card/>
+          <icone_card/>
+          <icone_card/>
+        </template>
       </Card>
     </div>
 
-    <!-- <div class="flex flex-row justify-between">
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.jpg" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect2.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-5/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
-        <img class="" src="../images/Intersect3.png" alt="img">
-        <div class="p-5">
-          <p class="uppercase text-xs">Management & Leadership</p>
-          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
-          <div class="flex flex-row w-9/12 justify-between pt-5">
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
-          </div>
-        </div>
-      </div>
-    </div> -->
-    <!-- <test/> -->
+
+
   </main>
   <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
     <div class="flex flex-row mt-28 mb-20">
