@@ -11,6 +11,7 @@ module.exports = {
         light_purple:'#F3EDFB',
         font:'#0A0909',
         gris:'rgba(255, 255, 255, 0.3)',
+        border_icone_card:'#FF6A60',
       }
     },
   },

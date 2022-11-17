@@ -1,11 +1,13 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+import test from './components/test.vue'
 import connect from './components/connect.vue'
+import Card from './components/Card.vue'
+import icone_card from './components/icone_card.vue';
 </script>
 
 <template class="overflow-x-hidden relative flex h-screen">
   <header class="block relative w-screen items-center text-white">
-    <img class="top-0 absolute w-screen -z-10 bg-no-repeat bg-cover" src="../images/fond.png" alt="fond">
+    <img class="top-0 absolute w-full -z-10 bg-no-repeat bg-cover" src="../images/fond.png" alt="fond">
     <nav class="flex flex-row w-11/12 h-40 justify-between items-center mx-auto">
       <div class="w-1/2 flex flex-row justify-around items-center">
         <img class=" w-30 h-4" src="../images/logo.svg" alt="logo">
@@ -25,7 +27,8 @@ import connect from './components/connect.vue'
       <h1 class="text-6xl font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
       <p class=" w-1/2 mx-auto">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
     </div>
-    <div class="p-5 absolute mt-20 ml-40 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
+  </header>
+  <div class="p-5 absolute mt-20 ml-40 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
       <div class="rounded-full py-2 px-5 w-9/12 flex flex-row bg-light_purple justify-between items-center ">
         <p>Quelle formation recherchez-vous ?</p>
         <img class=" w-8" src="../images/search.svg" alt="search">
@@ -34,12 +37,66 @@ import connect from './components/connect.vue'
         <p>Filtrer </p>
         <img src="../images/down.svg" alt="down">
       </div>
+  </div>
+  <main class=" mb-80 mt-72 w-11/12 mx-auto flex flex-col justify-between" >
+    <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+    <div class="flex flex-row justify-between">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
     </div>
-  </header>
-  <main class="h-96">
 
+    <!-- <div class="flex flex-row justify-between">
+      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
+        <img class="" src="../images/Intersect.jpg" alt="img">
+        <div class="p-5">
+          <p class="uppercase text-xs">Management & Leadership</p>
+          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
+          <div class="flex flex-row w-9/12 justify-between pt-5">
+            <icone_card/>
+            <icone_card/>
+            <icone_card/>
+          </div>
+        </div>
+      </div>
+      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
+        <img class="" src="../images/Intersect.png" alt="img">
+        <div class="p-5">
+          <p class="uppercase text-xs">Management & Leadership</p>
+          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
+          <div class="flex flex-row w-9/12 justify-between pt-5">
+            <icone_card/>
+          </div>
+        </div>
+      </div>
+      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
+        <img class="" src="../images/Intersect2.png" alt="img">
+        <div class="p-5">
+          <p class="uppercase text-xs">Management & Leadership</p>
+          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
+          <div class="flex flex-row w-5/12 justify-between pt-5">
+            <icone_card/>
+            <icone_card/>
+          </div>
+        </div>
+      </div>
+      <div  class=" rounded-sm bg-red w-1/5 shadow-lg">
+        <img class="" src="../images/Intersect3.png" alt="img">
+        <div class="p-5">
+          <p class="uppercase text-xs">Management & Leadership</p>
+          <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
+          <div class="flex flex-row w-9/12 justify-between pt-5">
+            <icone_card/>
+            <icone_card/>
+            <icone_card/>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <test/> -->
   </main>
-  <footer class=" relative pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
+  <footer class=" relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
     <div class="flex flex-row mt-28 mb-20">
       <div>
         <img class="mb-5" src="../images/Logotypes Skillsday.svg" alt="skillsday">
