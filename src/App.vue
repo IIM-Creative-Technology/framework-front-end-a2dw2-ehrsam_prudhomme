@@ -62,6 +62,12 @@ import pages from './components/pages.vue';
       <Card/>
       <Card/>
     </div>
+    <div class=" mt-20 flex flex-row justify-between">
+      <Card/>
+      <Card/>
+      <Card/>
+      <Card/>
+    </div>
     <div class="w-screen flex justify-end -ml-32">
       <div class="mt-20 relative flex flex-row justify-between w-48 items-center">
         <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
