@@ -1,11 +1,11 @@
 <script setup>
-import connect from './components/connect.vue';
+import Connect from './components/Connect.vue';
 import Card from './components/Card.vue';
-import boutton from './components/boutton.vue';
-import pages from './components/pages.vue';
-import drop_down_footer from './components/drop_down_footer.vue';
-import icone_card from './components/icone_card.vue';
-import footer_cat from './components/footer_cat.vue';
+import Boutton from './components/Boutton.vue';
+import Pages from './components/Pages.vue';
+import DropDownFooter from './components/DropDownFooter.vue';
+import IconeCard from './components/IconeCard.vue';
+import FooterCat from './components/FooterCat.vue';
 
 </script>
 
@@ -26,8 +26,8 @@ import footer_cat from './components/footer_cat.vue';
       </div>
 
       <div class=" w-1/4 hidden md:flex font-semibold justify-around">
-        <boutton class="bg-white/30" msg="06 74 49 03 21"/>
-        <boutton class=" text-purple bg-white" msg="Je prends contact"/>
+        <Boutton class="bg-white/30" msg="06 74 49 03 21"/>
+        <Boutton class=" text-purple bg-white" msg="Je prends contact"/>
       </div>
     </nav>
 
@@ -70,30 +70,30 @@ import footer_cat from './components/footer_cat.vue';
     <div class="justify-between grid md:grid-cols-4 gap-6">
         <Card url="/Intersect.jpg">
           <template v-slot:icone>
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
+            <IconeCard/>
+            <IconeCard/>
+            <IconeCard/>
           </template>
         </Card>
 
-        <Card url="../../Intersect.png">
+        <Card url="/Intersect.png">
           <template v-slot:icone>
-            <icone_card/>
+            <IconeCard/>
           </template>
         </Card>
 
-        <Card url="../../Intersect2.png">
+        <Card url="/Intersect2.png">
           <template v-slot:icone>
-            <icone_card/>
-            <icone_card/>
+            <IconeCard/>
+            <IconeCard/>
           </template>
         </Card>
 
-        <Card url="../../Intersect3.png">
+        <Card url="/Intersect3.png">
           <template v-slot:icone>
-            <icone_card/>
-            <icone_card/>
-            <icone_card/>
+            <IconeCard/>
+            <IconeCard/>
+            <IconeCard/>
           </template>
         </Card>
 
@@ -104,85 +104,85 @@ import footer_cat from './components/footer_cat.vue';
     <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
 
     <div class="justify-between md:mb-16 grid md:grid-cols-4 gap-6">
-      <Card url="../../Intersect1-1.png">
+      <Card url="/Intersect1-1.png">
         <template v-slot:icone>
-          <icone_card/>
-          <icone_card/>
-          <icone_card/>
+          <IconeCard/>
+          <IconeCard/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect1-2.png">
+      <Card url="/Intersect1-2.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect1-3.png">
+      <Card url="/Intersect1-3.png">
         <template v-slot:icone>
-          <icone_card/>
-          <icone_card/>
-          <icone_card/>
+          <IconeCard/>
+          <IconeCard/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect1-4.png">
+      <Card url="/Intersect1-4.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
     </div>
 
     <div class="justify-between md:mb-16 grid md:grid-cols-4 gap-6">
-      <Card url="../../Intersect2-1.png">
+      <Card url="/Intersect2-1.png">
         <template v-slot:icone>
-          <icone_card/>
-          <icone_card/>
+          <IconeCard/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect2-2.png">
+      <Card url="/Intersect2-2.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect2-3.png">
+      <Card url="/Intersect2-3.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect2-4.png">
+      <Card url="/Intersect2-4.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
     </div>
 
     <div class="justify-between grid md:grid-cols-4 gap-6">
-      <Card url="../../Intersect3-1.png">
+      <Card url="/Intersect3-1.png">
         <template v-slot:icone>
-          <icone_card/>
-          <icone_card/>
+          <IconeCard/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect3-2.png">
+      <Card url="/Intersect3-2.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect3-3.png">
+      <Card url="/Intersect3-3.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
 
-      <Card url="../../Intersect3-4.png">
+      <Card url="/Intersect3-4.png">
         <template v-slot:icone>
-          <icone_card/>
+          <IconeCard/>
         </template>
       </Card>
     </div>
@@ -191,20 +191,20 @@ import footer_cat from './components/footer_cat.vue';
 
     <div class="w-screen flex justify-end md:-ml-32">
       <div class="md:mt-20 mt-8 relative flex flex-row justify-between w-48 items-center md:mx-0 mx-auto">
-        <pages class="flex text-border_icone_card opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_icone_card text-2xl" number="1"/>
-        <pages number="2"/>
-        <pages number="3"/>
-        <pages number="4"/>
-        <pages number="..."/>
-        <pages number="8"/>
+        <Pages class="flex text-border_IconeCard opacity-100 border-2 rounded-full w-10 h-10 items-center pl-3 border-border_IconeCard text-2xl" number="1"/>
+        <Pages number="2"/>
+        <Pages number="3"/>
+        <Pages number="4"/>
+        <Pages number="..."/>
+        <Pages number="8"/>
       </div>
     </div>
     <div class="mt-20 md:w-7/12 w-11/12 items-center md:h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
-      <h3 class="my-5 md:text-3xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue to-border_icone_card md:text-black">C’est votre dernier mot ?</h3>
+      <h3 class="my-5 md:text-3xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue to-border_IconeCard md:text-black">C’est votre dernier mot ?</h3>
       <p class="md:w-5/12 w-11/12 ">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
       <div class="my-5 flex md:flex-row flex-col w-11/12 md:w-6/12 justify-between">
-        <boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
-        <boutton class="mt-5 md:mt-0 font-semibold border-2 border-border_icone_card" msg="Télécharger le catalogue"/>
+        <Boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
+        <Boutton class="mt-5 md:mt-0 font-semibold border-2 border-border_IconeCard" msg="Télécharger le catalogue"/>
       </div>
     </div>
 
@@ -218,11 +218,11 @@ import footer_cat from './components/footer_cat.vue';
         <p class="md:hidden  flex pl-5 w-11/12 ">Skillsday, l’agence du mobile learning qui accompagne la performance des collaborateurs sur des formats courts, ciblés et efficients.</p>
       </div>
       
-      <drop_down_footer titre="solutions"/>
-      <drop_down_footer titre="formations"/>
-      <drop_down_footer titre="informations"/>
+      <DropDownFooter titre="solutions"/>
+      <DropDownFooter titre="formations"/>
+      <DropDownFooter titre="informations"/>
 
-      <footer_cat>
+      <FooterCat>
         <template v-slot:title>
           <h4 class="opacity-40 uppercase mb-5">solutions</h4>
         </template>
@@ -231,9 +231,9 @@ import footer_cat from './components/footer_cat.vue';
           <p class="mb-2">Digitaliser les formations</p>
           <p class="mb-2">Accompagner les déploiements</p>
         </template>
-      </footer_cat>
+      </FooterCat>
 
-      <footer_cat>
+      <FooterCat>
         <template v-slot:title>
           <h4 class="opacity-40 uppercase mb-5">formations</h4>
         </template>
@@ -241,9 +241,9 @@ import footer_cat from './components/footer_cat.vue';
           <p class="mb-2">Toutes les formations</p>
           <p class="mb-2">Télécharger le catalogue</p>
         </template>
-      </footer_cat>
+      </FooterCat>
 
-      <footer_cat>
+      <FooterCat>
         <template v-slot:title>
           <h4 class="opacity-40 uppercase mb-5">informations</h4>
         </template>
@@ -252,7 +252,7 @@ import footer_cat from './components/footer_cat.vue';
           <p class="mb-2">Nous contacter</p>
           <p class="mb-2">FAQ</p>
         </template>
-      </footer_cat>
+      </FooterCat>
 
     </div>
     <div class="flex md:flex-row flex-col">
@@ -269,10 +269,10 @@ import footer_cat from './components/footer_cat.vue';
 
       <div class="mb-5 flex flex-row justify-between md:w-2/12 w-1/2  ml-30 mt-16 md:mt-0 md:ml-20 mx-auto">
       
-        <connect urlConnect="../../instagram.svg"/>
-        <connect urlConnect="../../linkedin.svg"/>
-        <connect urlConnect="../../frame.svg"/>
-        <connect urlConnect="../../youtube.svg"/>
+        <Connect urlConnect="/instagram.svg"/>
+        <Connect urlConnect="/linkedin.svg"/>
+        <Connect urlConnect="/frame.svg"/>
+        <Connect urlConnect="/youtube.svg"/>
 
       </div>
     </div>

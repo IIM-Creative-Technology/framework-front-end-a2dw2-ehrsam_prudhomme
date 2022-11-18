@@ -1,5 +1,5 @@
 <script setup>
-import icone_card from './icone_card.vue';
+import icone_card from './IconeCard.vue';
 defineProps(['text','url'])
 </script>
 
