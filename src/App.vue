@@ -267,7 +267,7 @@ import footer_cat from './components/footer_cat.vue';
         </div>
       </div>
 
-      <div class="mb-5 flex flex-row justify-between md:w-2/12 w-1/2  ml-20 mx-auto">
+      <div class="mb-5 flex flex-row justify-between md:w-2/12 w-1/2  ml-30 mt-32 md:mt-0 md:ml-20 mx-auto">
       
         <connect urlConnect="../../instagram.svg"/>
         <connect urlConnect="../../linkedin.svg"/>
