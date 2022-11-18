@@ -3,6 +3,8 @@ import connect from './components/connect.vue'
 import Card from './components/Card.vue'
 import boutton from './components/boutton.vue';
 import pages from './components/pages.vue';
+import icone_card from './components/icone_card.vue';
+import footer_cat from './components/footer_cat.vue';
 </script>
 
 <template>
@@ -247,23 +249,39 @@ import pages from './components/pages.vue';
         <img class="mb-5" src="../images/Logotypes Skillsday.svg" alt="skillsday">
         <p class=" w-60" >Skillsday est un organisme nouvelle génération qui a pour mission de moderniser et digitaliser la formation en entreprise pour former, vraiment !</p>
       </div>
-      <div class="font-semibold ml-20">
-        <h4 class="opacity-40 uppercase mb-5">solutions</h4>
-        <p class="mb-2">Développer les soft skills </p>
-        <p class="mb-2">Digitaliser les formations</p>
-        <p class="mb-2">Accompagner les déploiements</p>
-      </div>
-      <div class="font-semibold ml-20">
-        <h4 class="opacity-40 uppercase mb-5">formations</h4>
-        <p class="mb-2">Toutes les formations</p>
-        <p class="mb-2">Télécharger le catalogue</p>
-      </div>
-      <div class="font-semibold ml-20">
-        <h4 class="opacity-40 uppercase mb-5">informations</h4>
-        <p class="mb-2">Nous rejoindre</p>
-        <p class="mb-2">Nous contacter</p>
-        <p class="mb-2">FAQ</p>
-      </div>
+
+      <footer_cat>
+        <template v-slot:title>
+          <h4 class="opacity-40 uppercase mb-5">solutions</h4>
+        </template>
+        <template v-slot:text>
+          <p class="mb-2">Développer les soft skills</p>
+          <p class="mb-2">Digitaliser les formations</p>
+          <p class="mb-2">Accompagner les déploiements</p>
+        </template>
+      </footer_cat>
+
+      <footer_cat>
+        <template v-slot:title>
+          <h4 class="opacity-40 uppercase mb-5">formations</h4>
+        </template>
+        <template v-slot:text>
+          <p class="mb-2">Toutes les formations</p>
+          <p class="mb-2">Télécharger le catalogue</p>
+        </template>
+      </footer_cat>
+
+      <footer_cat>
+        <template v-slot:title>
+          <h4 class="opacity-40 uppercase mb-5">informations</h4>
+        </template>
+        <template v-slot:text>
+          <p class="mb-2">Nous rejoindre</p>
+          <p class="mb-2">Nous contacter</p>
+          <p class="mb-2">FAQ</p>
+        </template>
+      </footer_cat>
+
     </div>
     <div class="flex flex-row">
       <div>
@@ -271,10 +289,29 @@ import pages from './components/pages.vue';
         <p>Mentions légales  •  Politique de confidentialité  •  CGV</p>
       </div>
       <div class="flex flex-row justify-between w-2/12  ml-20">
-        <connect/>
-        <connect/>
-        <connect/>
-        <connect/>
+        <connect>
+          <template v-slot:url>
+            <img class="mx-auto" src="../../images/instagram.svg" alt="logo">
+          </template>
+        </connect>
+
+        <connect>
+          <template v-slot:url>
+            <img class="mx-auto" src="../../images/linkedin.svg" alt="logo">
+          </template>
+        </connect>
+
+        <connect>
+          <template v-slot:url>
+            <img class="mx-auto" src="../../images/Frame.svg" alt="logo">
+          </template>
+        </connect>
+
+        <connect>
+          <template v-slot:url>
+            <img class="mx-auto" src="../../images/youtube.svg" alt="logo">
+          </template>
+        </connect>
       </div>
     </div>
   </footer>
