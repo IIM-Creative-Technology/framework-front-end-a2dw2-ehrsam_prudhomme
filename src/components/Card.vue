@@ -1,11 +1,11 @@
 <script setup>
 import icone_card from './icone_card.vue';
-defineProps(['text'])
+defineProps(['text','url'])
 </script>
 
 <template>
   <div class="mb-8 rounded-lg md:w-1/5 shadow-lg">
-    <slot name="img"></slot>
+    <img class="w-full" :src="url" alt="img">
     <div class="p-5">
       <slot name="title"><p class="uppercase text-xs">THÉMATIQUE 1</p></slot>
       <h4 class="font-semibold">Accueillir un.e collègue en situation de handicap</h4>
