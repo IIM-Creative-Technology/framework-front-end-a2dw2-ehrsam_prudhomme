@@ -261,7 +261,7 @@ import footer_cat from './components/footer_cat.vue';
         <div class="mt-5 flex md:flex-row flex-col justify-between h-32 w-full">
           <p>Mentions légales</p>
           <P class="md:flex hidden mx-2">•</P>
-          <p>Politique de confidentiali</p>
+          <p>Politique de confidentialité</p>
           <P class="md:flex hidden mx-2">•</P>
           <p>CGV</p>
         </div>
