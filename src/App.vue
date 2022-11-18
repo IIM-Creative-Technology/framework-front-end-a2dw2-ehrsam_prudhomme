@@ -296,7 +296,7 @@ import drop_down_footer from './components/drop_down_footer.vue';
       </div>
     </div>
     <div class="flex md:flex-row flex-col">
-      <div class="flex flex-col">
+      <div class=" ml-5  flex flex-col">
         <p>©Skillsday 2022</p>
         <div class="mt-5 flex md:flex-row flex-col justify-between h-32 w-full">
           <p>Mentions légales</p>
@@ -306,7 +306,7 @@ import drop_down_footer from './components/drop_down_footer.vue';
           <p>CGV</p>
         </div>
       </div>
-      <div class="flex flex-row justify-between md:w-2/12 w-1/2  ml-20 mx-auto">
+      <div class="mb-5 flex flex-row justify-between md:w-2/12 w-1/2  ml-20 mx-auto">
         <connect/>
         <connect/>
         <connect/>
