@@ -3,8 +3,10 @@ import connect from './components/connect.vue';
 import Card from './components/Card.vue';
 import boutton from './components/boutton.vue';
 import pages from './components/pages.vue';
+import drop_down_footer from './components/drop_down_footer.vue';
 import icone_card from './components/icone_card.vue';
 import footer_cat from './components/footer_cat.vue';
+
 </script>
 
 <template>
@@ -206,13 +208,19 @@ import footer_cat from './components/footer_cat.vue';
       </div>
     </div>
 
-  <footer class="mt-20 relative w-screen pb-20 flex flex-col bg-font text-white bottom-0 pl-20">  
+  <footer class="mt-20 relative w-screen md:pb-20 -pb-10 flex flex-col bg-font text-white bottom-0 md:pl-20">  
 
-    <div class="flex flex-row mt-28 mb-20">
+    <div class="flex md:flex-row flex-col mt-28 mb-20">
       <div>
-        <img class="mb-5" src="../Logotypes Skillsday.svg" alt="skillsday">
-        <p class=" w-60" >Skillsday est un organisme nouvelle génération qui a pour mission de moderniser et digitaliser la formation en entreprise pour former, vraiment !</p>
+      
+        <img class="mb-5 pl-5" src="../Logotypes Skillsday.svg" alt="skillsday">
+        <p class="md:flex  hidden pl-5 w-60" >Skillsday est un organisme nouvelle génération qui a pour mission de moderniser et digitaliser la formation en entreprise pour former, vraiment !</p>
+        <p class="md:hidden  flex pl-5 w-11/12 ">Skillsday, l’agence du mobile learning qui accompagne la performance des collaborateurs sur des formats courts, ciblés et efficients.</p>
       </div>
+      
+      <drop_down_footer titre="solutions"/>
+      <drop_down_footer titre="formations"/>
+      <drop_down_footer titre="informations"/>
 
       <footer_cat>
         <template v-slot:title>
@@ -247,13 +255,19 @@ import footer_cat from './components/footer_cat.vue';
       </footer_cat>
 
     </div>
-    <div class="flex flex-row">
-      <div>
+    <div class="flex md:flex-row flex-col">
+      <div class=" ml-5  flex flex-col">
         <p>©Skillsday 2022</p>
-        <p>Mentions légales  •  Politique de confidentialité  •  CGV</p>
+        <div class="mt-5 flex md:flex-row flex-col justify-between h-32 w-full">
+          <p>Mentions légales</p>
+          <P class="md:flex hidden mx-2">•</P>
+          <p>Politique de confidentiali</p>
+          <P class="md:flex hidden mx-2">•</P>
+          <p>CGV</p>
+        </div>
       </div>
 
-      <div class="flex flex-row justify-between w-2/12  ml-20">
+      <div class="mb-5 flex flex-row justify-between md:w-2/12 w-1/2  ml-20 mx-auto">
       
         <connect urlConnect="../../instagram.svg"/>
         <connect urlConnect="../../linkedin.svg"/>
