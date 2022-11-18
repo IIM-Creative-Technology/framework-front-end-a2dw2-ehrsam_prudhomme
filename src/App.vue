@@ -67,8 +67,8 @@ import footer_cat from './components/footer_cat.vue';
       </div>
     </div>
 
-    <div class="flex md:flex-row flex-col justify-between">
-        <Card url="../../Intersect.jpg">
+    <div class="justify-between grid md:grid-cols-4 gap-6">
+        <Card url="/Intersect.jpg">
           <template v-slot:icone>
             <icone_card/>
             <icone_card/>
@@ -103,7 +103,7 @@ import footer_cat from './components/footer_cat.vue';
   <main class="-mb-5 mb:mt-40 mt-20 w-11/12 mx-auto flex flex-col justify-between" >
     <h3 class="text-lg font-semibold uppercase mb-10">TOUTES LES FORMATIONS 🚀</h3>
 
-    <div class="flex md:flex-row flex-col justify-between md:mb-16">
+    <div class="justify-between md:mb-16 grid md:grid-cols-4 gap-6">
       <Card url="../../Intersect1-1.png">
         <template v-slot:icone>
           <icone_card/>
@@ -133,7 +133,7 @@ import footer_cat from './components/footer_cat.vue';
       </Card>
     </div>
 
-    <div class="flex md:flex-row flex-col justify-between md:mb-16">
+    <div class="justify-between md:mb-16 grid md:grid-cols-4 gap-6">
       <Card url="../../Intersect2-1.png">
         <template v-slot:icone>
           <icone_card/>
@@ -160,7 +160,7 @@ import footer_cat from './components/footer_cat.vue';
       </Card>
     </div>
 
-    <div class="flex md:flex-row flex-col justify-between">
+    <div class="justify-between grid md:grid-cols-4 gap-6">
       <Card url="../../Intersect3-1.png">
         <template v-slot:icone>
           <icone_card/>

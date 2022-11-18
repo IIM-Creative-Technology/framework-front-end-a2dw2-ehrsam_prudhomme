@@ -4,7 +4,7 @@ defineProps(['text','url'])
 </script>
 
 <template>
-  <div class="mb-8 rounded-lg md:w-1/5 shadow-lg">
+  <div class="mb-8 rounded-lg shadow-lg">
     <img class="w-full" :src="url" alt="img">
     <div class="p-5">
       <slot name="title"><p class="uppercase text-xs">THÉMATIQUE 1</p></slot>
