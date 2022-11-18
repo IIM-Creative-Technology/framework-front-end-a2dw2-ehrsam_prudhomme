@@ -1,7 +1,6 @@
 <!-- Voir https://vuejs.org/guide/components/props.html#prop-passing-details -->
 
 <script setup>
-defineProps(['text'])
 </script>
 
 <template>
