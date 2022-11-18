@@ -6,41 +6,48 @@ import pages from './components/pages.vue';
 </script>
 
 <template>
-  <div class="flex flex-col overflow-x-hidden items-center relative flex w-screen h-screen">
+  <div class="flex flex-col overflow-x-hidden items-center relative w-screen h-screen">
   <header class="block relative  w-screen items-center text-white">
-    <img class="top-0 absolute w-full -z-10" src="../images/fond.png" alt="fond">
-    <nav class="flex flex-row w-11/12 h-40 justify-between items-center mx-auto">
+    <img class="h-full md:h-auto top-0 absolute w-full -z-10" src="../images/fond.png" alt="fond">
+    <nav class="md:flex hidden flex-row w-11/12 md:h-40 h-32 justify-between items-center mx-auto">
       <div class="w-1/2 flex flex-row justify-around items-center">
-        <img class=" w-30 h-4" src="../images/logo.svg" alt="logo">
-        <div class="w-2/3 flex flex-row justify-around">
+        <img class="hidden md:flex w-30 h-4" src="../images/logo.svg" alt="logo">
+        <div class="w-2/3 hidden md:flex flex-row justify-around">
           <p>Offres</p>
           <p class="font-semibold">Formation</p>
           <p>Ressources</p>
           <p>A propos</p>
         </div>
       </div>
-      <div class="flex w-1/4 font-semibold justify-around">
+      <div class=" w-1/4 hidden md:flex font-semibold justify-around">
         <boutton class="bg-white/30" msg="06 74 49 03 21"/>
         <boutton class=" text-purple bg-white" msg="Je prends contact"/>
       </div>
     </nav>
-    <div class=" mt-5 flex flex-col text-center">
-      <h1 class="text-6xl font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
-      <p class=" w-1/2 mx-auto">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
+    <nav class="flex md:hidden h-20 items-center w-11/12 mx-auto">
+      <div class="md:hidden flex flex-row justify-between w-screen">
+        <img class="flex h-8" src="../images/Logotypes Skillsday.svg" alt="logo">
+        <img class="flex" src="../images/menu.svg" alt="menu">
+      </div>
+    </nav>
+    <div class=" md:mt-5 mt-10 mb-20 flex flex-col text-center items-center">
+      <h1 class="md:text-6xl text-3xl md:w-auto w-11/12 font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
+      <p class=" md:w-1/2 mx-auto -mt-5 md:mt-0 w-11/12">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
     </div>
   </header>
-  <div class="mt-6 p-5 absolute top-2/4 rounded-3xl w-9/12 mx-auto flex flex-row justify-around bg-white text-font shadow-lg">
-      <div class="rounded-full py-2 px-5 w-9/12 flex flex-row bg-light_purple justify-between items-center ">
-        <p>Quelle formation recherchez-vous ?</p>
+  <div class="md:mt-6 -mt-10 p-5 absolute top-2/4 rounded-3xl w-11/12 md:w-9/12 mx-auto flex md:flex-row flex-col justify-around bg-white text-font shadow-lg">
+      <div class="rounded-full py-2 px-5 w-full md:w-9/12 flex flex-row bg-light_purple justify-between items-center ">
+        <p class="md:flex hidden">Quelle formation recherchez-vous ?</p>
+        <p  class="md:hidden flex">Quelle formation recherch...</p>
         <img class=" w-8" src="../images/search.svg" alt="search">
       </div>
-      <div class=" rounded-full py-2 px-10 w-2/12 flex flex-row bg-light_purple justify-around items-center">
+      <div class=" mt-5 md:mt-0 rounded-full py-2 px-10 w-full md:w-2/12 flex flex-row bg-light_purple md:justify-around justify-between items-center">
         <p>Filtrer </p>
         <img src="../images/down.svg" alt="down">
       </div>
   </div>
-  <main class="mt-72 w-11/12 mx-auto flex flex-col justify-between" >
-    <div class="flex flex-row w-maw justify-between">
+  <main class="md:mt-72 mt-40 w-11/12 mx-auto flex flex-col justify-between " >
+    <div class="flex flex-row w-maw justify-between items-center">
       <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
       <div class="flex flex-row items-center">
         <img class="w-6 h-6" src="../images/arrow_l.svg" alt="arrow">
