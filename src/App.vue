@@ -200,11 +200,11 @@ import footer_cat from './components/footer_cat.vue';
       </div>
     </div>
     <div class="mt-20 md:w-7/12 w-11/12 items-center md:h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
-      <h3 class="my-5 md:text-3xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue to-border_icone_card md:text-black">C’est votre dernier mot ?</h3>
+      <h3 class="my-5 md:text-3xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue via-purple to-border_icone_card md:text-black">C’est votre dernier mot ?</h3>
       <p class="md:w-5/12 w-11/12 ">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
       <div class="my-5 flex md:flex-row flex-col w-11/12 md:w-6/12 justify-between">
         <boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
-        <boutton class="mt-5 md:mt-0 font-semibold border-2 border-border_icone_card" msg="Télécharger le catalogue"/>
+        <boutton class="md:mt-0 mt-5 font-semibold bg-light_purple border-2 border-border_icone_card" msg="Télécharger le catalogue"/>
       </div>
     </div>
 
