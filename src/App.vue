@@ -14,7 +14,7 @@ import FooterCat from './components/FooterCat.vue';
   <header class="block relative  w-screen items-center text-white">
     <img class="h-full md:h-auto top-0 absolute w-full -z-10" src="../fond.png" alt="fond">
     
-    <nav class="md:flex hidden flex-row w-11/12 md:h-40 h-32 justify-between items-center mx-auto">
+    <nav class="md:flex hidden flex-row w-11/12 md:h-30 h-32 justify-between items-center mx-auto">
       <div class="w-1/2 flex flex-row justify-around items-center">
         <img class="hidden md:flex w-30 h-4" src="../logo.svg" alt="logo">
         <div class="w-2/3 hidden md:flex flex-row justify-around">
@@ -38,13 +38,13 @@ import FooterCat from './components/FooterCat.vue';
       </div>
     </nav>
 
-    <div class=" md:mt-5 mt-10 mb-20 flex flex-col text-center items-center">
+    <div class=" md:mt-5 mt-6 mb-20 flex flex-col text-center items-center">
       <h1 class="md:text-6xl text-3xl md:w-auto w-11/12 font-bold mb-10">Découvrez nos formations sur étagère ! </h1>
       <p class=" md:w-1/2 mx-auto -mt-5 md:mt-0 w-11/12">Notre catalogue de formations soft skills est le meilleur allié de vos managers et collaborateurs. Management, vente, ressources humaines, efficacité professionnelle... Composez votre parcours de formation et mixez les modalités pédagogiques pour développer leurs compétences.</p>
     </div>
   </header>
 
-  <div class="md:mt-6 -mt-10 p-5 absolute top-2/4 rounded-3xl w-11/12 md:w-9/12 mx-auto flex md:flex-row flex-col justify-around bg-white text-font shadow-lg">
+  <div class="md:mt-4 -mt-12 translate-2/4 p-5 rounded-3xl w-11/12 md:w-9/12 mx-auto flex md:flex-row flex-col justify-around bg-white text-font shadow-lg">
     <div class="rounded-full py-2 px-5 w-full md:w-9/12 flex flex-row bg-light_purple justify-between items-center ">
       <p class="md:flex hidden">Quelle formation recherchez-vous ?</p>
       <p  class="md:hidden flex">Quelle formation recherch...</p>
@@ -57,7 +57,7 @@ import FooterCat from './components/FooterCat.vue';
     </div>
   </div>
 
-  <main class="md:mt-72 mt-40 w-11/12 mx-auto flex flex-col justify-between " >
+  <main class="md:mt-20 mt-20 w-11/12 mx-auto flex flex-col justify-between " >
 
     <div class="flex flex-row w-maw justify-between items-center">
       <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
