@@ -59,8 +59,8 @@ import FooterCat from './components/FooterCat.vue';
 
   <main class="md:mt-20 mt-20 w-11/12 mx-auto flex flex-col justify-between " >
 
-    <div class="flex flex-row w-maw justify-between items-center">
-      <h3 class="text-lg font-semibold uppercase mb-10">Les PLUS POPULAIRES 🔥</h3>
+    <div class="flex flex-row w-maw justify-between items-center mb-10">
+      <h3 class="text-lg font-semibold uppercase">Les PLUS POPULAIRES 🔥</h3>
       <div class="flex flex-row items-center">
         <img class="w-6 h-6" src="../arrow_l.svg" alt="arrow">
         <img class="w-6 h-6 ml-2" src="../arrow_r.svg" alt="arrow">
