@@ -69,6 +69,9 @@ import FooterCat from './components/FooterCat.vue';
 
     <div class="justify-between grid md:grid-cols-4 gap-6">
         <Card url="/Intersect.jpg">
+          <template v-slot:title>
+            <p class="uppercase text-xs">Management & Leadership</p>
+          </template>
           <template v-slot:icone>
             <IconeCard/>
             <IconeCard/>
@@ -77,12 +80,18 @@ import FooterCat from './components/FooterCat.vue';
         </Card>
 
         <Card url="/Intersect.png">
+          <template v-slot:title>
+            <p class="uppercase text-xs">Vente</p>
+          </template>
           <template v-slot:icone>
             <IconeCard/>
           </template>
         </Card>
 
         <Card url="/Intersect2.png">
+          <template v-slot:title>
+            <p class="uppercase text-xs">RH, QVT & diversité</p>
+          </template>
           <template v-slot:icone>
             <IconeCard/>
             <IconeCard/>
