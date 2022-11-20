@@ -211,9 +211,11 @@ import FooterCat from './components/FooterCat.vue';
     <div class="mt-20 md:w-7/12 w-11/12 items-center md:h-60 justify-around mx-auto flex flex-col bg-light_purple rounded-2xl py-5 text-center">
       <h3 class="my-5 md:text-3xl text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue via-purple to-border_IconeCard md:text-black">C’est votre dernier mot ?</h3>
       <p class="md:w-5/12 w-11/12 ">Si vous n’avez pas trouvé ce que vous cherchez, dites-le nous.</p>
-      <div class="my-5 flex md:flex-row flex-col w-11/12 md:w-6/12 justify-between">
-        <Boutton class="bg-purple text-white font-semibold" msg="Je prends contact"/>
-        <Boutton class="mt-5 md:mt-0 font-semibold border-2 border-border_IconeCard" msg="Télécharger le catalogue"/>
+      <div class="my-5 flex md:flex-row flex-col w-11/12 md:w-6/12 justify-between items-center">
+        <Boutton class="bg-purple text-white h-14 font-semibold w-full md:w-auto" msg="Je prends contact"/>
+        <div class="bg-[url('/fond.png')] h-14 bg-cover rounded-full items-center flex px-1 mt-5 md:mt-0 w-full md:w-auto">
+          <Boutton class=" w-full h-12 md:mt-0 font-semibold border-2 bg-light_purple" msg="Télécharger le catalogue"/>
+        </div>
       </div>
     </div>
 
